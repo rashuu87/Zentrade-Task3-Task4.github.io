@@ -1,0 +1,63 @@
+:root {
+    --boxShadow: 2px 2px 3px rgba(0, 0, 0, .25);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    padding: 2rem;
+    background-color: #e7e7e7;
+}
+.parent h4 {
+    color: #141414;
+    margin-bottom: 1rem;
+}
+.innerCont {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+    border-left: 8px solid #41bf99;
+    background-color: #fff;
+    padding: 10px 1.5rem;
+    box-shadow: var(--boxShadow);
+}
+.card h3,
+.card p {
+    color: #141414;
+}
+h3.green {
+    color: #41bf99;
+}
+h3.red {
+    color: #df494b;
+}
+.card p {
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+/* ##### Chart Stylings ##### */
+.parent.sec2 {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+.chartCont {
+    width: 100%;
+}
+.chartCanvas {
+    width: 100% !important;
+    max-width: 800px !important;
+    height: auto !important;
+    aspect-ratio: 634/313;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: var(--boxShadow);
+}
